@@ -136,7 +136,6 @@ public class LoadFromConfig : MonoBehaviour {
 
                     GameObject endTile = GameObject.Instantiate(endTileGO, tileToPlaceOn.transform.position, Quaternion.identity);
                     endTile.transform.localScale = new Vector3(cardLength, cardHeight, cardWidth);
-                    endTile.transform.Rotate(new Vector3(0f, 180f, 0f));
                     
                     if (n == random)
                     {

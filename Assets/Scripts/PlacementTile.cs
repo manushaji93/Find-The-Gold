@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class PlacementTile : MonoBehaviour {
 
-    //Renderer rend;
-    // Use this for initialization
-    void Start()
+    Renderer rend;
+    //Use this for initialization
+
+   void Start()
     {
-        //rend = GetComponent<Renderer>();
-        //rend.material.shader = Shader.Find("Standard");
-        //rend.material.SetColor("_Color", Color.blue);
+       rend = GetComponent<MeshRenderer>();
+       rend.material.color = Color.white;
     }
 
-    //void OnMouseOver()
-    //{
-    //    rend.material.shader = Shader.Find("Standard");
-    //    rend.material.SetColor("_Color", Color.green);
-    //}
+    void OnMouseOver()
+    {
+        rend.material.color = Color.green;
+    }
 
-    //void OnMouseExit()
-    //{
-    //    rend.material.shader = Shader.Find("Standard");
-    //    rend.material.SetColor("_Color", Color.blue);
-    //}
+    void OnMouseExit()
+    {
+        rend.material.color = Color.white;
+    }
 }

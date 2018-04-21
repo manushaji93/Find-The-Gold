@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33859994476714552}
   - component: {fileID: 65755774187852482}
   - component: {fileID: 23228000772752360}
+  - component: {fileID: 114668427337611468}
   m_Layer: 10
   m_Name: EndTile
   m_TagString: EndTile
@@ -93,3 +94,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114668427337611468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075231597186580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e46674ca36cd174d91cfe8f2440d93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
