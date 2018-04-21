@@ -1,0 +1,20 @@
+//Config file. Change values for the game here. The board and other initial setup is based on this.
+
+//CARDSIZE|width|length|height
+CARDSIZE|6|9|0.2
+
+//BOARDGRID: Grid size
+BOARDGRID|5|9
+
+//Gap between cards
+CARDGAP|0.2
+
+//Board margin
+BMARGIN|1
+
+//Start card position. Only specify column number. Always bottom row.
+STARTPOS|3
+
+//End card positions. Always top row. Number of end cards depend on how many are added. Gold will always be randomized at start of game.
+//If number of end cards are more than the row size, the ones at the end will be removed.
+ENDCARDS|1 3 5
