@@ -5,7 +5,7 @@ using System.IO;
 
 public class LoadFromConfig : MonoBehaviour {
 
-    string configFilePath = @"\Unity Projects\Find The Gold\Assets\Text Files\config.txt";
+    string configFilePath = @"\Unity Projects\Find-The-Gold\Assets\Text Files\config.txt";
     float cardWidth, cardLength, cardHeight, gridWidth, gridLength, cardGap, boardMargin, boardWidth, boardLength, boardHeight, camSize;
     string startPos;
     string[] endPos;
