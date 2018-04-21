@@ -139,6 +139,7 @@ MonoBehaviour:
   startTileGO: {fileID: 1529804621844112, guid: a352eab42f6aff843b2337da18518f0c,
     type: 2}
   endTileGO: {fileID: 1075231597186580, guid: 15efb2e11e86ebc40afd8f08d1bbc1b3, type: 2}
+  goldCardMaterial: {fileID: 2100000, guid: 025b3b419dc14e349a8039ba3027b876, type: 2}
 --- !u!4 &725538760
 Transform:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c1517527639463d4295351de32db7348, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

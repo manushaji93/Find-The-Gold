@@ -12,6 +12,7 @@ public class LoadFromConfig : MonoBehaviour {
 
     GameObject boardGO;
     public GameObject playTileGO, startTileGO, endTileGO;
+    public Material goldCardMaterial;
     Camera mainCam;
    
     // Use this for initialization
@@ -123,6 +124,8 @@ public class LoadFromConfig : MonoBehaviour {
 
         if (endPos.Length != 0)
         {
+            int random = Random.Range(0,endPos.Length);
+
             for (int n = 0; n < endPos.Length; n++)
             {
                 if ((float.Parse(endPos[n]) - 1) < gridWidth)
@@ -133,6 +136,13 @@ public class LoadFromConfig : MonoBehaviour {
 
                     GameObject endTile = GameObject.Instantiate(endTileGO, tileToPlaceOn.transform.position, Quaternion.identity);
                     endTile.transform.localScale = new Vector3(cardLength, cardHeight, cardWidth);
+                    endTile.transform.Rotate(new Vector3(0f, 180f, 0f));
+                    
+                    if (n == random)
+                    {
+                        endTile.GetComponent<MeshRenderer>().material = goldCardMaterial;
+                    }
+
                     Destroy(tileToPlaceOn);
                     endTile.name = endCardName;
                 }
